@@ -1,0 +1,12 @@
+# Xcode
+build/
+DerivedData/
+*.xcuserstate
+*.xcworkspace/xcuserdata/
+OpenTV.xcodeproj/xcuserdata/
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# macOS
+.DS_Store

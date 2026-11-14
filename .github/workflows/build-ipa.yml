@@ -1,0 +1,51 @@
+name: Build IPA
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: macos-15
+    steps:
+      - name: Check out
+        uses: actions/checkout@v4
+
+      - name: Show Xcode version
+        run: xcodebuild -version
+
+      - name: Build app (unsigned, for sideloading)
+        run: |
+          xcodebuild -project OpenTV.xcodeproj \
+            -scheme OpenTV \
+            -configuration Release \
+            -destination 'generic/platform=iOS' \
+            -derivedDataPath build \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGN_IDENTITY="" \
+            CODE_SIGNING_REQUIRED=NO
+
+      - name: Package IPA
+        run: |
+          APP_PATH=$(find build/Build/Products/Release-iphoneos -maxdepth 1 -name "*.app" | head -1)
+          if [ -z "$APP_PATH" ]; then
+            echo "No .app found in build/Build/Products/Release-iphoneos"
+            exit 1
+          fi
+          echo "Found app: $APP_PATH"
+          rm -rf Payload
+          mkdir -p Payload
+          cp -R "$APP_PATH" Payload/
+          zip -r OpenTV-1.0.0.ipa Payload
+          ls -lh OpenTV-1.0.0.ipa
+
+      - name: Upload IPA artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: OpenTV-1.0.0.ipa
+          path: OpenTV-1.0.0.ipa
+          if-no-files-found: error

@@ -1,0 +1,361 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DBEFE2B8AD25758A26F08768 /* OpenTVApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3496E6DB71DE45F29C39A8DE /* OpenTVApp.swift */; };
+		75B881FE73E7518CB156D231 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4625EEEE372F73831D3C0CF5 /* Models.swift */; };
+		8EE8939C05CDF256C4DD055F /* M3UParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEDBA4E56DA5F54FFB21156 /* M3UParser.swift */; };
+		9982A0C6075598963AD13D44 /* EPGParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08EF2202843B399BF4180C9 /* EPGParser.swift */; };
+		52525676C858595A121B3AFA /* EPGStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCF4F61E5080F1A3A7BA632 /* EPGStore.swift */; };
+		6C3F1C857B3925D080B331C7 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1A49D9099225DD139530D9 /* AppState.swift */; };
+		B03713E4E82F5D5A1CD1D2D5 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE9767C2469054E552F44E0 /* PlayerView.swift */; };
+		F9D42C44C5743849E6A3E6EC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA63278175151F945BC14A3 /* ContentView.swift */; };
+		6867EA275E4BBE4CF3C88736 /* ChannelListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872D00FD8193122F3AF0B758 /* ChannelListView.swift */; };
+		FC67E3A1420F920BAE9548B6 /* GuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2340591E05A97AA77DCA9F55 /* GuideView.swift */; };
+		531C2E7DE5495AA235C670DF /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF54CA48178AD200316DA2F /* FavoritesView.swift */; };
+		E69ABB31D93352EEA9E92800 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B6415E526DD30CC13F31F8 /* SettingsView.swift */; };
+		EB3055DAD513731D4A157243 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F48DF4F3860AD99D8ED0721 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		01DAA48182CB5502A95D8429 /* OpenTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F48DF4F3860AD99D8ED0721 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E11324A5BC4F0A7FA438F642 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3496E6DB71DE45F29C39A8DE /* OpenTVApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenTVApp.swift; sourceTree = "<group>"; };
+		4625EEEE372F73831D3C0CF5 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		6FEDBA4E56DA5F54FFB21156 /* M3UParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M3UParser.swift; sourceTree = "<group>"; };
+		D08EF2202843B399BF4180C9 /* EPGParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPGParser.swift; sourceTree = "<group>"; };
+		AFCF4F61E5080F1A3A7BA632 /* EPGStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPGStore.swift; sourceTree = "<group>"; };
+		5C1A49D9099225DD139530D9 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		EFE9767C2469054E552F44E0 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		3CA63278175151F945BC14A3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		872D00FD8193122F3AF0B758 /* ChannelListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelListView.swift; sourceTree = "<group>"; };
+		2340591E05A97AA77DCA9F55 /* GuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideView.swift; sourceTree = "<group>"; };
+		7BF54CA48178AD200316DA2F /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		64B6415E526DD30CC13F31F8 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		83A0EF045BEDED5779C8D043 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (
+		);
+		runOnlyForDeploymentPostprocessing = 0;
+	};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C83C56C58470393E35E1B586 = {
+			isa = PBXGroup;
+			children = (
+				675B03420DE30147642D3CD8 /* OpenTV */,
+				8C1969BC5989E871C77EB3CC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		675B03420DE30147642D3CD8 /* OpenTV */ = {
+			isa = PBXGroup;
+			children = (
+				3496E6DB71DE45F29C39A8DE /* OpenTVApp.swift */,
+				4625EEEE372F73831D3C0CF5 /* Models.swift */,
+				6FEDBA4E56DA5F54FFB21156 /* M3UParser.swift */,
+				D08EF2202843B399BF4180C9 /* EPGParser.swift */,
+				AFCF4F61E5080F1A3A7BA632 /* EPGStore.swift */,
+				5C1A49D9099225DD139530D9 /* AppState.swift */,
+				EFE9767C2469054E552F44E0 /* PlayerView.swift */,
+				3CA63278175151F945BC14A3 /* ContentView.swift */,
+				872D00FD8193122F3AF0B758 /* ChannelListView.swift */,
+				2340591E05A97AA77DCA9F55 /* GuideView.swift */,
+				7BF54CA48178AD200316DA2F /* FavoritesView.swift */,
+				64B6415E526DD30CC13F31F8 /* SettingsView.swift */,
+				3F48DF4F3860AD99D8ED0721 /* Assets.xcassets */,
+				E11324A5BC4F0A7FA438F642 /* Info.plist */,
+			);
+			path = OpenTV;
+			sourceTree = "<group>";
+		};
+		8C1969BC5989E871C77EB3CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				01DAA48182CB5502A95D8429 /* OpenTV.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7F9F307A4448A8BCB3F1A315 /* OpenTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2092533F0850847C9FB62FB /* Build configuration list for PBXNativeTarget "OpenTV" */;
+			buildPhases = (
+				79F4CD12AA17ECA60B6F278C /* Sources */,
+				83A0EF045BEDED5779C8D043 /* Frameworks */,
+				B296B68A4D479C08F69D4A38 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenTV;
+			productName = OpenTV;
+			productReference = 01DAA48182CB5502A95D8429 /* OpenTV.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		30981B88B1FDBCFD633469D4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					7F9F307A4448A8BCB3F1A315 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+				};
+			};
+			buildConfigurationList = 3D59A5380EBD5A1E1BB4A452 /* Build configuration list for PBXProject "OpenTV" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C83C56C58470393E35E1B586;
+			productRefGroup = 8C1969BC5989E871C77EB3CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7F9F307A4448A8BCB3F1A315 /* OpenTV */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B296B68A4D479C08F69D4A38 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (
+			EB3055DAD513731D4A157243 /* Assets.xcassets in Resources */,
+		);
+		runOnlyForDeploymentPostprocessing = 0;
+	};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		79F4CD12AA17ECA60B6F278C /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (
+			DBEFE2B8AD25758A26F08768 /* OpenTVApp.swift in Sources */,
+			75B881FE73E7518CB156D231 /* Models.swift in Sources */,
+			8EE8939C05CDF256C4DD055F /* M3UParser.swift in Sources */,
+			9982A0C6075598963AD13D44 /* EPGParser.swift in Sources */,
+			52525676C858595A121B3AFA /* EPGStore.swift in Sources */,
+			6C3F1C857B3925D080B331C7 /* AppState.swift in Sources */,
+			B03713E4E82F5D5A1CD1D2D5 /* PlayerView.swift in Sources */,
+			F9D42C44C5743849E6A3E6EC /* ContentView.swift in Sources */,
+			6867EA275E4BBE4CF3C88736 /* ChannelListView.swift in Sources */,
+			FC67E3A1420F920BAE9548B6 /* GuideView.swift in Sources */,
+			531C2E7DE5495AA235C670DF /* FavoritesView.swift in Sources */,
+			E69ABB31D93352EEA9E92800 /* SettingsView.swift in Sources */,
+		);
+		runOnlyForDeploymentPostprocessing = 0;
+	};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0AE3D3D817795CE7FA77C1BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("DEBUG=1", "$(inherited)");
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFS_STRING = en;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BEB962F8AAB269278A4A8885 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFS_STRING = en;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F12F48228D9675BC2F6782AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = OpenTV/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks");
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.opentv.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMBED_LIBRARIES_WITH_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = ("DEBUG=1", "$(inherited)");
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AED9437AB3A11F293E5E5E92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = OpenTV/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks");
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.opentv.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMBED_LIBRARIES_WITH_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D59A5380EBD5A1E1BB4A452 /* Build configuration list for PBXProject "OpenTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AE3D3D817795CE7FA77C1BD /* Debug */,
+				BEB962F8AAB269278A4A8885 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2092533F0850847C9FB62FB /* Build configuration list for PBXNativeTarget "OpenTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F12F48228D9675BC2F6782AF /* Debug */,
+				AED9437AB3A11F293E5E5E92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 30981B88B1FDBCFD633469D4 /* Project object */;
+}
